@@ -1,0 +1,22 @@
+<div class="row">
+	<div class="col-6">
+		<button type="button" (click)="openModal(template)">See Modal</button>
+	</div>
+</div>
+<br />
+<ng-template #template>
+	<div class="head">
+		<button
+      type="button"
+      class="close pull-right"
+      aria-label="Close"
+      (click)="modelRef.hide()"
+    >
+      Close
+    </button>
+	</div>
+	<br />
+	<div class="body">
+		<app-tour></app-tour>
+	</div>
+</ng-template>
